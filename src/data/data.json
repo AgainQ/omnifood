@@ -1,0 +1,78 @@
+{
+  "steps": [
+    {
+      "number": 1,
+      "title": "Tell us what you like (and what not)",
+      "text": "Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!",
+      "img": "../../img/app/app-screen-1.png"
+    },
+    {
+      "number": 2,
+      "title": "Approve your weekly meal plan",
+      "text": "Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.",
+      "img": "../../img/app/app-screen-2.png"
+    },
+    {
+      "number": 3,
+      "title": "Receive meals at convenient time",
+      "text": "Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!",
+      "img": "../../img/app/app-screen-3.png"
+    }
+  ],
+  "meals": [
+    {
+      "title": "Japanese Gyozas",
+      "img": "../../img/meals/meal-1.jpg",
+      "calories": 650,
+      "nutriScore": 74,
+      "rating": 4.9,
+      "numReviews": 537,
+      "tags": [
+        {
+          "name": "Vegetarian",
+          "color": "#50CF66"
+        }
+      ]
+    },
+    {
+      "title": "Avocado Salad",
+      "img": "../../img/meals/meal-2.jpg",
+      "calories": 400,
+      "nutriScore": 92,
+      "rating": 4.8,
+      "numReviews": 441,
+      "tags": [
+        {
+          "name": "Vegan",
+          "color": "#94D82C"
+        },
+        {
+          "name": "Paleo",
+          "color": "#FFD43B"
+        }
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "img": "../../img/customers/dave.jpg",
+      "text": "Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.",
+      "authorName": "Ben Hadley"
+    },
+    {
+      "img": "../../img/customers/ben.jpg",
+      "text": "The AI algorithm is crazy good, it chooses the right meals for me every time. It is amazing not to worry about food anymore!",
+      "authorName": "Dave Bryson"
+    },
+    {
+      "img": "../../img/customers/steve.jpg",
+      "text": "Omnifood is a life saver! I just started a company, so there is no time for cooking. I could not live without my daily meals now!",
+      "authorName": "Steve Miller"
+    },
+    {
+      "img": "../../img/customers/hannah.jpg",
+      "text": "I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and without plastic.",
+      "authorName": "Hannah Smith"
+    }
+  ]
+}

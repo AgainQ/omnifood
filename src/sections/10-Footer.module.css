@@ -1,0 +1,55 @@
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #f7f7f7;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  column-gap: 6.4rem;
+}
+
+/*  */
+
+.logo {
+  height: 2.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.copyright {
+  font-size: var(--font-size-sm);
+  margin-top: 6rem;
+  color: #777;
+  line-height: 1.4;
+}
+
+/*  */
+
+.title {
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.linksList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.link {
+  &:link,
+  &:visited {
+    font-size: var(--font-size-md);
+    color: #777;
+  }
+
+  &:hover,
+  &:active {
+    color: var(--color-primary-dark);
+  }
+}

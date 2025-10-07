@@ -1,0 +1,129 @@
+.section {
+  padding: 4.8rem 0 12.8rem;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+  border-radius: 11px;
+
+  @media (max-width: 59em) {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/* text-box */
+
+.textBox {
+  color: var(--color-brown);
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+  @media (max-width: 59em) {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  }
+}
+
+.heading {
+  font-size: 4.4rem;
+  color: var(--color-grey-dark);
+  font-weight: 700;
+  color: inherit;
+  margin-bottom: 3.2rem;
+
+  @media (max-width: 59em) {
+    font-size: 3.6rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.text {
+  margin-bottom: 4.8rem;
+  line-height: 1.8;
+
+  @media (max-width: 59em) {
+    margin-bottom: 3.6rem;
+  }
+}
+
+/* form */
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+
+  @media (max-width: 59em) {
+    grid-template-columns: 1fr;
+  }
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  & label {
+    font-size: var(--font-size-md);
+    font-weight: 500;
+  }
+
+  & input,
+  & select {
+    font-size: var(--font-size-lg);
+    padding: 1.2rem;
+    border-radius: 9px;
+    border: none;
+    background-color: var(--color-secondary);
+    font-family: inherit;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #aaa;
+    }
+  }
+}
+
+.btn {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-secondary);
+  background-color: var(--color-brown);
+
+  align-self: end;
+  padding: 1.6rem;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #fff;
+    color: var(--color-grey-dark);
+  }
+
+  @media (max-width: 59em) {
+    margin-top: 1.2rem;
+  }
+}
+
+/* img-box */
+
+.imgBox {
+  background-image:
+    linear-gradient(to right bottom, hsla(28, 80%, 61%, 35%), hsla(28, 80%, 52%, 35%)),
+    url('../../public/img/eating.jpg');
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}

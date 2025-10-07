@@ -1,0 +1,26 @@
+.section {
+  margin-top: 3.2rem;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+
+  img {
+    height: 3.2rem;
+    opacity: 0.5;
+    filter: brightness(0);
+
+    @media (max-width: 59em) {
+      height: 2.4rem;
+    }
+  }
+}

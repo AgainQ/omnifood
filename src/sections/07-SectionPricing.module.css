@@ -1,0 +1,71 @@
+.section {
+  padding: 9.6rem 0;
+  background-color: #fff;
+}
+
+.pricingPlans {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6.4rem;
+  margin-bottom: 4.8rem;
+}
+
+.pricingPlan {
+  padding: 4.8rem;
+  width: 75%;
+  border-radius: 11px;
+}
+
+.pricingPlan.starter {
+  border: 2px solid var(--color-secondary);
+  background-color: #fff;
+  justify-self: end;
+}
+
+.pricingPlan.complete {
+  background-color: var(--color-secondary);
+}
+
+/* header */
+
+.header {
+  margin-bottom: 4.8rem;
+  text-align: center;
+}
+
+.name {
+  font-size: var(--font-size-lg);
+  text-transform: uppercase;
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.price {
+  font-size: 6.2rem;
+  color: var(--color-grey-dark);
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.pricePerMeal {
+  color: #6f6f6f;
+  font-size: var(--font-size-md);
+}
+
+/*  */
+.btnBox {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.info {
+  text-align: center;
+  font-size: var(--font-size-md);
+}

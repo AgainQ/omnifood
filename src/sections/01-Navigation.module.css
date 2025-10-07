@@ -1,0 +1,141 @@
+.nav {
+  height: 9.6rem;
+  padding: 0 3.2rem;
+  background-color: var(--color-secondary);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+
+  @media (max-width: 75em) {
+    gap: 3.2rem;
+  }
+}
+
+.navLink:link,
+.navLink:visited {
+  color: var(--color-grey-dark);
+  font-weight: 500;
+
+  transition: all 0.2s;
+}
+
+.navLink:hover,
+.navLink:active {
+  color: var(--color-primary-dark);
+}
+
+.navLink.cta:link,
+.navLink.cta:visited {
+  padding: 1.2rem 2.4rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 9px;
+}
+
+.navLink.cta:hover,
+.navLink.cta:active {
+  background-color: var(--color-primary-dark);
+}
+
+/* active */
+/* можно без important сделать, но мне меньше нравится это */
+:global(.active).navLink {
+  color: var(--color-primary-dark) !important;
+}
+
+:global(.active).cta {
+  color: #fff !important;
+}
+
+/* only for small screens */
+.menuBtn {
+  background-color: transparent;
+}
+
+/* drawer */
+.drawerOverlay {
+  position: fixed;
+  bottom: 0;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  z-index: 100;
+}
+
+.drawerContent {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 6.4rem 3.2rem;
+  z-index: 101;
+
+  width: 50vw;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  background-color: #fff;
+
+  @media (max-width: 40em) {
+    width: 100vw;
+    border-radius: 0;
+  }
+}
+
+.menuLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.menuLink {
+  &:link,
+  &:visited {
+    font-size: 3rem;
+    color: var(--color-grey-dark);
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+
+  &:hover,
+  &:active {
+    color: var(--color-primary-dark);
+  }
+}
+
+.menuLink.cta {
+  &:link,
+  &:visited {
+    padding: 1.2rem 2.4rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 9px;
+  }
+}
+
+.drawerBtnClose {
+  background-color: transparent;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  cursor: pointer;
+
+  svg {
+    &:hover {
+      color: var(--color-primary-dark);
+    }
+  }
+}
